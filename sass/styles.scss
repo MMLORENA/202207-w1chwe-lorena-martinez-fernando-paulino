@@ -1,11 +1,10 @@
-@use "./components/fonts";
 @use "./components/header";
-@use "./components/icons";
 @use "./components/colors";
 
 body {
   box-sizing: border-box;
   margin: 0;
+  background-color: colors.$color-white;
 }
 
 .line-separator {
@@ -16,11 +15,11 @@ body {
 }
 
 .search-properties-container {
-  background-color: colors.$background-primary-color;
+  background-color: colors.$color-white;
   margin: 30px 60px;
 
-  h2 {
-    color: colors.$text-primary-color;
+  .search-properties-container__main-title {
+    color: colors.$color-black;
     font-family: Poppins;
     font-size: 24px;
     font-weight: 700;
@@ -46,7 +45,7 @@ body {
     margin: 8px;
     border-radius: 10px;
     height: 20px;
-    border: 1px solid colors.$border-primary-color;
+    border: 1px solid colors.$color-black;
     flex-grow: 1;
   }
 
@@ -57,10 +56,10 @@ body {
   }
 
   #button-search-properties {
-    background-color: colors.$background-secondary-color;
+    background-color: colors.$color-pink;
     border: 0;
     border-radius: 50px;
-    color: colors.$text-secondary-color;
+    color: colors.$color-white;
     padding: 8px;
     max-width: 100%;
     margin: 8px;
