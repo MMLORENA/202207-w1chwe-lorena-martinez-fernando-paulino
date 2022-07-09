@@ -12,7 +12,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.53.0",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "sass": "^1.53.0"
+  },
+  "dependencies": {
+    "fontawesome-free-sass-2": "^5.15.4",
+    "sass-google-fonts": "^1.0.1"
   }
 }
