@@ -1,0 +1,13 @@
+@use "fonts";
+@use "header";
+@use "icons";
+
+.body {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+.separator-line {
+  border-bottom: 1px;
+  border-color: purple;
+}
