@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch-sass": "npx sass /sass/styles.scss /styles/styles.css --watch",
-    "netlify-sass": "npx sass sass/styles.scss styles/styles.css",
+    "watch-sass": "npx sass sass/styles.scss styles/styles.css --watch",
+    "production-sass": "npx sass sass/styles.scss styles/styles.css",
     "prepare": "husky install"
   },
   "keywords": [],
