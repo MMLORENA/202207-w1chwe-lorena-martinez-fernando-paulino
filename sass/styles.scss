@@ -1,16 +1,17 @@
 @use "./components/fonts";
 @use "./components/header";
-@use "./components/icons";
+// @use "./components/icons";
 @use "./components/colors";
 
-.body {
+body {
   box-sizing: border-box;
   margin: 0;
 }
-.separator-line {
+
+.line-separator {
   height: 0.001px;
-  width: 100%;
-  border-bottom: 0.01px solid rgba(0, 0, 0, 0.06);
+  width: 100vw;
+  border-bottom: 0.01px solid rgba(0, 0, 0, 0.26);
   margin: 0;
 }
 
