@@ -4,28 +4,29 @@
   display: flex;
   justify-content: space-between;
   margin: 30px 60px;
-}
-.main-header-menu {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: inherit;
-  width: 200px;
-}
-.main-header-title {
-  width: 205px;
-  height: 55px;
-  font-weight: bold;
-  font-size: 34.38px;
-  line-height: 55px;
-  color: colors.$theme-color-purple;
-  font-family: "poppins", sans-serif;
-  font-weight: bolder;
-}
+  color: colors.$color-purple;
 
-.fa-solid {
-  color: colors.$theme-color-purple;
-  width: inherit;
-  font-size: 25px;
-  text-align: right;
+  .main-header-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: inherit;
+    width: 200px;
+  }
+
+  .main-header-title {
+    width: 205px;
+    height: 55px;
+    font-weight: bold;
+    font-size: 34.38px;
+    line-height: 55px;
+    font-family: "poppins", sans-serif;
+    font-weight: bolder;
+  }
+
+  .fa-solid {
+    width: inherit;
+    font-size: 25px;
+    text-align: right;
+  }
 }
