@@ -1,0 +1,19 @@
+@use "../_colors/colors";
+@use "../_extends/extends";
+
+@mixin search-properties-box {
+  margin: 30px 60px;
+  padding: 20px;
+  @extend %display-flex;
+}
+@mixin search-container__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 1000px) {
+  .search-properties-box:first-child {
+    width: 40%;
+  }
+}

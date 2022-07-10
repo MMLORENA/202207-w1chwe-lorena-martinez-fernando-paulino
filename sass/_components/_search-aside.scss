@@ -1,0 +1,50 @@
+@use "../_colors/colors";
+@use "../_mixins/mixins";
+@use "../_extends/extends";
+
+.search-aside-container {
+  @extend %display-flex;
+  border-radius: 10px;
+  background-color: colors.$color-purple;
+  @include mixins.search-properties-box;
+  @include mixins.search-container__form;
+
+  .search-aside-container__main-title {
+    color: colors.$color-white;
+    font-weight: 700;
+    align-self: flex-start;
+    font-size: 24px;
+  }
+}
+.search-aside-container__button {
+  width: 347px;
+  height: 64px;
+  @extend %display-flex;
+  #button-search-properties {
+    background-color: colors.$color-pink;
+    border: 0;
+    border-radius: 50px;
+    color: colors.$color-white;
+    padding: 8px;
+    max-width: 100%;
+    margin: 8px;
+    width: 347px;
+  }
+}
+
+.search-aside-container__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.search-aside__box {
+  @extend %form-box-input;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 10px;
+  height: 20px;
+  border: 1px solid colors.$color-black;
+  flex-grow: 1;
+  align-items: flex-start;
+  width: 347px;
+}

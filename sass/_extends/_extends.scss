@@ -1,0 +1,21 @@
+@use "../_colors/colors";
+%line-separator {
+  height: 0.001px;
+  width: 100vw;
+  border-bottom: 0.01px solid rgba(0, 0, 0, 0.26);
+}
+
+%display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%form-box-input {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 10px;
+  height: 20px;
+  border: 1px solid colors.$color-black;
+  flex-grow: 1;
+}
