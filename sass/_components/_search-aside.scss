@@ -1,6 +1,7 @@
 @use "../_colors/colors";
 @use "../_mixins/mixins";
 @use "../_extends/extends";
+@use "./body";
 
 .search-aside-container {
   @extend %display-flex;
@@ -15,11 +16,16 @@
     align-self: flex-start;
     font-size: 24px;
   }
+  .search-aside__text {
+    color: colors.$color-white;
+    margin-left: 12px;
+  }
 }
 .search-aside-container__button {
   width: 347px;
   height: 64px;
   @extend %display-flex;
+
   #button-search-properties {
     background-color: colors.$color-pink;
     border: 0;
@@ -39,12 +45,10 @@
 }
 .search-aside__box {
   @extend %form-box-input;
-  padding: 8px;
-  margin: 8px;
   border-radius: 10px;
-  height: 20px;
-  border: 1px solid colors.$color-black;
+  height: 40px;
   flex-grow: 1;
   align-items: flex-start;
   width: 347px;
+  font-weight: 400;
 }
