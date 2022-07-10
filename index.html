@@ -26,7 +26,7 @@
       </nav>
     </header>
     <div class="line-separator"></div>
-    <section class="search-properties-container">
+   <section class="search-properties-container">
       <h2 class="search-properties-container__main-title">
         Find deals on hotels, homes and much more...
       </h2>
@@ -34,66 +34,71 @@
         <input
           class="search-properties-box"
           type="text"
-          name="place-selector"
           id="place-selector"
           placeholder="Where are you going?"
+          autocomplete="off"
         />
         <input
           class="search-properties-box"
           type="datetime"
           id="travel-date"
           placeholder="Check-in Check-out"
+          autocomplete="off"
         />
         <input
           class="search-properties-box"
           type="number"
-          name="adults-number"
           id="adults-number"
           placeholder="2 adults - 0 children"
+          autocomplete="off"
         />
         <button type="submit" id="button-search-properties">Search</button>
       </form>
     </section>
     <div class="line-separator"></div>
-    <section class="search-aside-container"> 
+    <aside class="search-aside-container"> 
       <h2 class="search-aside-container__main-title">
         Search
       </h2>
       <form class="search-aside-container__form">
-        <span class="search-aside__text">Destination/property name</span>
+       <label for="Destination-aside" class="search-aside__text">Destination/property name
         <input
           class="search-aside__box"
           type="text"
-          name="place-selector"
-          id="place-selector"
+          id="Destination-aside"
           placeholder="Where are you going?"
+          autocomplete="off"
         />
-        <span class="search-aside__text">Check-in date</span>
+       </label>
+        
+         <label for="check-in-date-aside" class="search-aside__text">Check-in date</label>
         <input
           class="search-aside__box"
           type="datetime"
-          id="travel-date"
+          id="check-in-date-aside"
           placeholder="Check-in"
+          autocomplete="off"
         />
-        <span class="search-aside__text">Check-out date</span>
+         <label for="check-out-date-aside" class="search-aside__text">Check-out date</label>
          <input
           class="search-aside__box"
           type="datetime"
-          id="travel-date"
+          id="check-out-date-aside"
           placeholder="Check-out"
+          autocomplete="off"
         />
-        <span class="search-aside__text">Travellers</span>
+         <label for="Travellers" class="search-aside__text">Travellers</label>
         <input
           class="search-aside__box"
           type="number"
-          name="adults-number"
-          id="adults-number"
+          id="Travellers"
           placeholder="2 adults - 0 children"
+          autocomplete="off"
         />
-        
+
       </form>
       <div class="search-aside-container__button"><button type="submit" id="button-search-properties">Search</button></div>
-    </section>
+    </aside>>
     <main>
       <div class="results-container">
         <h2 class="results-container__title">254 Properties Found</h2>
