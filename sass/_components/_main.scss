@@ -23,10 +23,6 @@ main {
     display: flex;
   }
 
-  .property-images-carrousel:nth-child(1) {
-    opacity: 0.5;
-  }
-
   .property-images-carrousel {
     display: flex;
     flex-wrap: wrap;
@@ -36,10 +32,6 @@ main {
       margin: 10px 0;
     }
   }
-
-  // .property-description-container {
-
-  // }
 
   .stars-container {
     color: colors.$color-pink;
