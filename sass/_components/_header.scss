@@ -1,14 +1,13 @@
 @use "../_colors/colors";
 @use "body";
-@use "../_extends/extends";
+//@use "../_extends/extends";
 
 .main-header-container {
   display: flex;
   justify-content: space-between;
   color: colors.$color-purple;
-  height: 115px;
-  @extend %line-separator;
-  width: 100vw;
+  height: 105px;
+  //@extend %line-separator;
   position: relative;
 
   .main-header-menu {
@@ -16,7 +15,6 @@
     justify-content: flex-end;
     align-items: center;
     height: inherit;
-    width: 200px;
   }
 
   .main-header-title {
