@@ -1,19 +1,11 @@
 @use "../_colors/colors";
 
-.line-separator {
-  height: 0.001px;
-  width: 100vw;
-  border-bottom: 0.01px solid rgba(0, 0, 0, 0.26);
-  margin: 0;
-}
-
 .search-properties-container {
   background-color: colors.$color-white;
   margin: 30px 60px;
 
   .search-properties-container__main-title {
     color: colors.$color-black;
-    font-family: Poppins;
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
