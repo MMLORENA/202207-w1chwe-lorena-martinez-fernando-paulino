@@ -4,28 +4,24 @@
 .main-header-container {
   display: flex;
   justify-content: space-between;
-  margin: 30px 60px;
   color: colors.$color-purple;
+  height: 105px;
+  margin: 30px 60px;
 
   .main-header-menu {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: inherit;
-    width: 200px;
   }
 
   .main-header-title {
-    width: 205px;
-    height: 55px;
-    font-weight: bold;
+    max-width: 205px;
     font-size: 34.38px;
     line-height: 55px;
     font-weight: bolder;
   }
 
   .fa-solid {
-    width: inherit;
     font-size: 25px;
     text-align: right;
   }
