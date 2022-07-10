@@ -1,4 +1,7 @@
 @use "../_colors/colors";
+@use "../_components/body";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
 %line-separator {
   height: 0.001px;
   border-bottom: 0.01px solid rgba(0, 0, 0, 0.26);
@@ -17,4 +20,5 @@
   height: 20px;
   border: 1px solid colors.$color-black;
   flex-grow: 1;
+  font-family: "Poppins", sans-serif;
 }
