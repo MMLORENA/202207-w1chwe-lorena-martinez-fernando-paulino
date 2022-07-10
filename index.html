@@ -28,27 +28,76 @@
         <input
           class="search-properties-box"
           type="text"
-          name="place-selector"
           id="place-selector"
           placeholder="Where are you going?"
+          autocomplete="off"
         />
         <input
           class="search-properties-box"
           type="datetime"
           id="travel-date"
           placeholder="Check-in Check-out"
+          autocomplete="off"
         />
         <input
           class="search-properties-box"
           type="number"
-          name="adults-number"
           id="adults-number"
           placeholder="2 adults - 0 children"
+          autocomplete="off"
         />
         <button type="submit" id="button-search-properties">Search</button>
       </form>
     </section>
     <div class="line-separator"></div>
+    <aside class="search-aside-container">
+      <h2 class="search-aside-container__main-title">Search</h2>
+      <form class="search-aside-container__form">
+        <label for="Destination-aside" class="search-aside__text"
+          >Destination/property name
+          <input
+            class="search-aside__box"
+            type="text"
+            id="Destination-aside"
+            placeholder="Where are you going?"
+            autocomplete="off"
+          />
+        </label>
+
+        <label for="check-in-date-aside" class="search-aside__text"
+          >Check-in date</label
+        >
+        <input
+          class="search-aside__box"
+          type="datetime"
+          id="check-in-date-aside"
+          placeholder="Check-in"
+          autocomplete="off"
+        />
+        <label for="check-out-date-aside" class="search-aside__text"
+          >Check-out date</label
+        >
+        <input
+          class="search-aside__box"
+          type="datetime"
+          id="check-out-date-aside"
+          placeholder="Check-out"
+          autocomplete="off"
+        />
+        <label for="Travellers" class="search-aside__text">Travellers</label>
+        <input
+          class="search-aside__box"
+          type="number"
+          id="Travellers"
+          placeholder="2 adults - 0 children"
+          autocomplete="off"
+        />
+      </form>
+      <div class="search-aside-container__button">
+        <button type="submit" id="button-search-properties">Search</button>
+      </div>
+    </aside>
+    >
     <main>
       <div class="results-container">
         <h2 class="results-container__title">254 Properties Found</h2>
