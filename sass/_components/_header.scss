@@ -1,4 +1,5 @@
 @use "../_colors/colors";
+@use "./body";
 
 .main-header-container {
   display: flex;
@@ -20,7 +21,6 @@
     font-weight: bold;
     font-size: 34.38px;
     line-height: 55px;
-    font-family: "poppins", sans-serif;
     font-weight: bolder;
   }
 

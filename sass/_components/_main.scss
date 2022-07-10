@@ -1,0 +1,59 @@
+@use "../_colors/colors";
+@use "./mixins";
+
+main {
+  margin: 30px 60px;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .results-container__title {
+    margin: 10px;
+  }
+}
+
+.results-container__result-container {
+  padding: 30px 0;
+  border-bottom: 1px solid colors.$color-fadedblack;
+
+  .property-images-carrousel {
+    display: flex;
+
+    img {
+      padding: 0 10px;
+    }
+  }
+
+  .stars-container {
+    color: colors.$color-pink;
+    margin: 5px 0;
+  }
+
+  .result-container__title {
+    color: colors.$color-purple;
+    margin: 10px 0;
+  }
+
+  .fa-solid.fa-location-dot {
+    color: colors.$color-purple;
+  }
+
+  .map-title {
+    text-decoration: none;
+    color: colors.$color-purple;
+    padding: 5px;
+    font-weight: bold;
+  }
+
+  .button--transparent {
+    @include mixins.button;
+    @include mixins.transparent;
+  }
+
+  p {
+    margin: 15px 0;
+  }
+}
