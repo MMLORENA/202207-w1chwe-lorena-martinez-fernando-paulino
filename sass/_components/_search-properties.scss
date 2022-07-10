@@ -1,0 +1,64 @@
+@use "../_colors/colors";
+
+.line-separator {
+  height: 0.001px;
+  width: 100vw;
+  border-bottom: 0.01px solid rgba(0, 0, 0, 0.26);
+  margin: 0;
+}
+
+.search-properties-container {
+  background-color: colors.$color-white;
+  margin: 30px 60px;
+
+  .search-properties-container__main-title {
+    color: colors.$color-black;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    margin: 8px;
+  }
+
+  .search-properties-container__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: 1000px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .search-properties-box {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 10px;
+    height: 20px;
+    border: 1px solid colors.$color-black;
+    flex-grow: 1;
+  }
+
+  @media (min-width: 1000px) {
+    .search-properties-box:first-child {
+      width: 40%;
+    }
+  }
+
+  #button-search-properties {
+    background-color: colors.$color-pink;
+    border: 0;
+    border-radius: 50px;
+    color: colors.$color-white;
+    padding: 8px;
+    max-width: 100%;
+    margin: 8px;
+
+    @media (min-width: 1000px) {
+      width: 120px;
+    }
+  }
+}
