@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="search your lodge for vaction" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -26,7 +20,7 @@
       </nav>
     </header>
     <div class="line-separator"></div>
-   <section class="search-properties-container">
+    <section class="search-properties-container">
       <h2 class="search-properties-container__main-title">
         Find deals on hotels, homes and much more...
       </h2>
@@ -56,22 +50,23 @@
       </form>
     </section>
     <div class="line-separator"></div>
-    <aside class="search-aside-container"> 
-      <h2 class="search-aside-container__main-title">
-        Search
-      </h2>
+    <aside class="search-aside-container">
+      <h2 class="search-aside-container__main-title">Search</h2>
       <form class="search-aside-container__form">
-       <label for="Destination-aside" class="search-aside__text">Destination/property name
-        <input
-          class="search-aside__box"
-          type="text"
-          id="Destination-aside"
-          placeholder="Where are you going?"
-          autocomplete="off"
-        />
-       </label>
-        
-         <label for="check-in-date-aside" class="search-aside__text">Check-in date</label>
+        <label for="Destination-aside" class="search-aside__text"
+          >Destination/property name
+          <input
+            class="search-aside__box"
+            type="text"
+            id="Destination-aside"
+            placeholder="Where are you going?"
+            autocomplete="off"
+          />
+        </label>
+
+        <label for="check-in-date-aside" class="search-aside__text"
+          >Check-in date</label
+        >
         <input
           class="search-aside__box"
           type="datetime"
@@ -79,15 +74,17 @@
           placeholder="Check-in"
           autocomplete="off"
         />
-         <label for="check-out-date-aside" class="search-aside__text">Check-out date</label>
-         <input
+        <label for="check-out-date-aside" class="search-aside__text"
+          >Check-out date</label
+        >
+        <input
           class="search-aside__box"
           type="datetime"
           id="check-out-date-aside"
           placeholder="Check-out"
           autocomplete="off"
         />
-         <label for="Travellers" class="search-aside__text">Travellers</label>
+        <label for="Travellers" class="search-aside__text">Travellers</label>
         <input
           class="search-aside__box"
           type="number"
@@ -95,19 +92,28 @@
           placeholder="2 adults - 0 children"
           autocomplete="off"
         />
-
       </form>
-      <div class="search-aside-container__button"><button type="submit" id="button-search-properties">Search</button></div>
-    </aside>>
+      <div class="search-aside-container__button">
+        <button type="submit" id="button-search-properties">Search</button>
+      </div>
+    </aside>
+    >
     <main>
       <div class="results-container">
         <h2 class="results-container__title">254 Properties Found</h2>
         <div class="results-container__result-container">
-          <img
-            src="./media/house-picture.png"
-            alt="big white house with garden"
-            class="property_image"
-          />
+          <div class="property-images-carrousel">
+            <img
+              src="./media/house-picture.png"
+              alt="big white house with garden"
+              class="property_image"
+            />
+            <img
+              src="./media/house-picture.png"
+              alt="big white house with garden"
+              class="property_image"
+            />
+          </div>
           <div class="stars-container">
             <i class="fa-regular fa-star"></i>
             <i class="fa-regular fa-star"></i>
@@ -117,18 +123,18 @@
           </div>
           <section class="result-container__description">
             <h3 class="result-container__title">Estate de la Newcastle</h3>
-            <p class="result-container__location"
-              >Newcastle City Centre, Newcastle upon Tyne 0.1km from centre</p
-            >
+            <p class="result-container__location">
+              Newcastle City Centre, Newcastle upon Tyne 0.1km from centre
+            </p>
             <div class="result-container__map">
               <i class="fa-solid fa-location-dot"></i>
-              <a href="#" class="map-title">Show on map</h4>
+              <a href="#" class="map-title">Show on map</a>
               <p class="map-description">
                 Situated in Newcastle City Centre, Maldron Hotel features free
                 WiFi and a private courtyard.
               </p>
             </div>
-            <button>Make a booking</button>
+            <button class="button--transparent">Make a booking</button>
           </section>
         </div>
       </div>
